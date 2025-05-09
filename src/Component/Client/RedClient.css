@@ -1,0 +1,112 @@
+.assistance-container {
+    width: 100%;
+    height: 100%;
+    padding: 0px var(--left-space2);
+    background-color: var(--background-color);
+    color: white;
+    padding-top: var(--default-space);
+    padding-bottom: var(--default-space);
+  }
+  .assistance-container .mid {
+    display: flex;
+    gap: 30px;
+   
+  }
+  .assistance-container .mid ul{
+    margin: 0%;
+    padding: 0%;
+  }
+  .assistance-container .mid ul li {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    line-height: 3;
+  }
+  .assistance-container .mid ul li span {
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 50%;
+  }
+  .assistance-container .mid ul li.active-description {
+    color: white;
+    border-left: 3px solid white;
+  }
+  .vertical-line {
+    width: 2px;
+    height: 150px;
+    background-color: white;
+  }
+  .assistance-container .hr2 {
+    background-color: white;
+    width: 80%;
+    margin-top: 20px;
+    height: 2px;
+    z-index: 10;
+  }
+  .assistance-container .cards-section {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+  }
+  .assistance-container .cards-section .cards-area {
+    width: 32%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .assistance-container .cards-section .cards-area .hr {
+    width: 80%;
+  }
+  .assistance-container .cards-section .cards-area .top {
+    width: 100%;
+    height: 100px;
+    border-radius: var(--default-border-radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .assistance-container .cards-section .cards-area .top img {
+    height: 50px;
+    max-width: 80%;
+  }
+  @media (max-width: 768px) {
+    .assistance-container .mid ul li {
+     flex-direction: column;
+     align-items: start;
+     line-height: 1.5;
+     gap: 0;
+     padding: 10px 5px;
+     
+    }
+    .assistance-container .mid ul li span {
+     display: none;
+    }
+    .assistance-container .mid ul li strong {
+     line-height: 1;
+     margin: 0%;
+     padding: 0%;
+    }
+    .assistance-container .cards-section {
+      flex-direction: column;
+      margin-top: 10px;
+        }
+        .assistance-container .cards-section .cards-area {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+      
+        }
+        .assistance-container .cards-section .cards-area .top {
+          width: 100%;
+          height: 70px;
+        
+        }
+        .assistance-container .cards-section .cards-area .top img{
+            height: 40px;
+        }
+  }

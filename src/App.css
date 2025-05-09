@@ -1,0 +1,237 @@
+:root {
+  --primary-color:#000000;
+  --background-color:#BB0025;
+  --headings-color: var(--background-color);
+  --default-box-shadow:0 0 3px black;
+  --left-space:3%;
+  --mid-space:94%;
+  --right-space:3%;
+  --left-space2:10%;
+  --mid-space2:80%;
+  --right-space2:10%;
+  --default-border:1px solid var(--headings-color);
+  --text-color:white;
+  --font-family-base: var(--font-montserrat);
+  --default-p-size:16px;
+  --default-heading-description:28px;
+  --default-border-radius:6px;
+  --gradient-one: linear-gradient(to bottom right, #e7e7e725, #000000);
+  --default-space:60px;
+  }
+  
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body{
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  textarea{
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .floating-btn, .floating-btn2{
+background-color: var(--background-color);
+position: fixed;
+z-index: 30;
+display: flex;
+align-items: center;
+justify-content: center;
+
+color: white;
+width: 180px;
+border-radius: var(--default-border-radius);
+padding: 12px 7px;
+border-top-right-radius: 0px;
+border-bottom-right-radius: 0px;
+border: 1px solid rgb(249, 116, 116);
+border-right: none;
+gap: 5px;
+
+  }
+  .floating-btn{
+    bottom: 20px;
+    right: 0;
+  }
+  .floating-btn2{
+    bottom: 80px;
+    right: 0;
+  }
+  .floating-btn svg, .floating-btn2 svg{
+    animation: blink 1s infinite;
+  }
+  .floating-btn p, .floating-btn2 p{
+  line-height: 1;
+  padding: 0%;
+  margin: 0%;
+  }
+  @keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+  }
+  ul{
+  list-style: none;
+  }
+  .content{
+ padding-top: var(--default-space);
+  }
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: center;
+  height: fit-content;
+  gap: 10px;
+  margin: 20px 0px;
+}
+.heading p{
+  font-size: var(--default-heading-description);
+  
+  margin: 0%;
+  padding: 0%;
+  line-height: 1;
+
+}
+.heading h1{
+  
+  margin: 0%;
+  padding: 0%;
+  line-height: 1;
+}
+.heading .hr{
+ background-color: #000000;
+ height: 1px;
+ width: 15%;
+
+}
+ 
+.outline-btn{
+  padding: 10px 20px;
+  font-size: var(--default-p-size);
+  border: 2px solid var(--background-color);
+  border-radius: var(--default-border-radius) ;
+  color: var(--background-color);
+  width: fit-content;
+  transition: background 0.3s ;
+  cursor: pointer;
+
+}
+.outline-btn:hover{
+  background-color: var(--background-color);
+  color: white;
+}
+.outline-btn2{
+  padding: 10px 40px;
+  font-size: var(--default-p-size2);
+  border: 2px solid white;
+  border-radius: var(--default-border-radius) ;
+  color: white;
+  width: fit-content;
+  transition: background 0.3s ;
+  cursor: pointer;
+
+}
+.outline-btn2:hover{
+  background-color: white;
+  color: var(--background-color);
+}
+  
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+ margin-top: 30px;
+  width: 100%;
+  
+}
+
+.dots-wrapper {
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot.active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: white;
+}
+.arrowss{
+  display: flex;
+  gap: 20px;
+}
+.arrowss .arrow {
+  cursor: pointer;
+  font-size: var(--default-p-size);
+ color: rgb(255, 255, 255);
+}
+
+.dot-dark {
+  width: 12px;
+  height: 12px;
+background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dot-dark.active {
+  width: 30px;
+  border-radius: 50px;
+  background-color: var(--background-color);
+}
+.arrowss-dark{
+  display: flex;
+  gap: 20px;
+}
+.arrowss-dark .arrow {
+  cursor: pointer;
+  font-size: var(--default-p-size);
+ color: var(--background-color);
+}
+
+  
+  @media (max-width: 900px) {
+    :root {
+    --default-p-size:14px;
+    --default-heading-description:24px
+    }
+    .pagination {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+     margin-top: 30px;
+      width: 100%;
+    
+    }
+    .floating-btn p, .floating-btn2 p{
+      display: none;
+      }
+      .floating-btn, .floating-btn2{
+       font-size: 28px;
+       padding: 0;
+       padding: 10px;
+        border-radius: 50%;
+        right: 10px;
+        width: fit-content;
+      }
+      .outline-btn2{
+      margin-top: var(--default-space);
+      
+      }
+  
+  }

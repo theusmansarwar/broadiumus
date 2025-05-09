@@ -1,0 +1,117 @@
+.industry-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px;
+    perspective: 1000px;
+    cursor: pointer;
+    width: var(--mid-space2);
+    margin-left: var(--left-space2);
+    padding-top: var(--default-space);
+    padding-bottom: var(--default-space);
+}
+  .industry-card .flip-card {
+    background: transparent;
+    width: 100%;
+   min-height: 250px;
+    perspective: 1000px;
+  }
+  .industry-card .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d;
+  }
+  .industry-card .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  .industry-card .flip-card-front,
+  .industry-card .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+  .industry-card .flip-card-front {
+    background-color: #fff;
+    z-index: 2;
+  }
+  .industry-card .flip-card-back {
+    border: 2px solid var(--background-color);
+  }
+  .industry-card .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .industry-card .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .industry-card .flip-card .card-subtitle {
+    font-size: var(--default-p-size);
+    
+  }
+  .industry-card .flip-card .card-title {
+    font-size: var(--default-p-size);
+    text-align: center;
+    font-weight: bold;
+   
+  }
+  .industry-card .flip-card .card-line {
+    width: 30%;
+    border: 1px solid white;
+    margin-top: 10px;
+  }
+  .industry-card .flip-card-back {
+    background: white;
+    color: black;
+    transform: rotateY(180deg);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .industry-card .flip-card-back .card-description {
+    font-size: var(--default-p-size);
+   
+  }
+  .industry-card .flip-card-back .btn {
+    align-self: center;
+    font-size: var(--default-p-size2);
+    padding: 10px 20px;
+    background-color: var(--background-color);
+    color: white;
+    border: 1px solid var(--background-color);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .industry-card .flip-card-back .btn:hover {
+    background-color: white;
+    color: var(--background-color);
+  }
+  @media (max-width: 900px) {
+    .industry-card-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .flip-card {
+      height: 180px;
+    }
+    .flip-card .btn {
+      margin-bottom: 30px;
+    }
+  }

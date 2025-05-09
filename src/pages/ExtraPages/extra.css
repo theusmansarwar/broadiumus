@@ -1,0 +1,12 @@
+section{
+    width: var(--mid-space2);
+    margin-left: var(--left-space2);
+  margin-bottom: var(--default-space);
+    font-size: var(--default-p-size);
+}
+section ul li{
+    list-style: disc;
+}
+section h2{
+    font-size: 24px;
+}

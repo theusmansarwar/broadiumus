@@ -1,0 +1,36 @@
+.more-area{
+    background-color: var(--background-color);
+    padding-left: var(--left-space2);
+    padding-right: var(--left-space2);
+    padding-top: var(--default-space);
+    padding-bottom: var(--default-space);
+}
+.more-service-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: var(--default-space);
+   
+  }
+  .more-service-card .more-card {
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    color: white;
+    white-space: nowrap;
+  }
+  .more-service-card .more-card .card-title {
+    font-size: var(--default-p-size);
+    text-align: center;
+    margin: 0%;
+  }
+  @media (max-width: 900px) {
+    .more-service-card .more-card {
+        padding: 5px;
+     
+      }
+   
+  }
