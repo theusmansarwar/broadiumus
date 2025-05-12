@@ -1,5 +1,6 @@
 .contact-container {
     display: flex;
+    flex-direction: column;
     width: var(--mid-space2);
     margin-left: var(--left-space2);
     padding-top: 30px;
@@ -52,10 +53,15 @@
     border: none;
     border-bottom: 1px solid gray;
   }
+  .error-msg{
+    font-size: 10px;
+    color: red;
+    margin: 0%;
+  }
   .textarea-container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+   
   }
   .text-area-label {
     color: gray;

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Herosection from '../../Component/Hero/Herosection'
 import './HomePage.css'
 import Service from '../../Component/Services/Service'
 import Zerosection from '../../Component/Zero/Zerosection'

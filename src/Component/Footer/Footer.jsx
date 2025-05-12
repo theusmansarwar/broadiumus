@@ -35,7 +35,7 @@ const Footer = () => {
         <div className="footer-section">
           <img src={footerlogo} className="logo" alt="Logo" />
           <p className="footer-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.
+          Boost customer trust with Broadium, where every call and message gets a fast and accurate response every time.
           </p>
          
         </div>
@@ -62,10 +62,25 @@ const Footer = () => {
           <h4>Contact</h4>
         
           <div className="contact-info">
-            <p><CiMail /> info@hello.com</p>
-            <p><IoCallOutline /> +1 000-000-0000</p>
-            <p><IoLocationOutline /> 8819 Ohio St. South Gate, CA 90280</p>
-          </div>
+  <p>
+    <CiMail />
+    <a href="mailto:support@broadium.us">support@broadium.us</a>
+  </p>
+  <p>
+    <IoCallOutline />
+    <a href="tel:+12103468115">+1 (210) 346-8115</a>
+  </p>
+  <p>
+    <IoLocationOutline />
+    <a
+      href="https://www.google.com/maps/place/4419+Centennial+Blvd+Ste+1060,+Colorado+Springs,+CO+80907"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      4419 Centennial Blvd Ste 1060, Colorado Springs, CO 80907 USA
+    </a>
+  </p>
+</div>
         </div>
       </div>
 

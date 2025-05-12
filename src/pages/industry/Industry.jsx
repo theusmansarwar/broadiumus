@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-
+import React, { useEffect } from "react";
 import "./Industry.css";
 import Image1 from "../../assets/1.jpg";
 import Image2 from "../../assets/2.jpg";
@@ -12,12 +11,12 @@ import Image8 from "../../assets/8.jpg";
 import Image9 from "../../assets/9.jpg";
 import Image10 from "../../assets/10.jpg";
 import Image11 from "../../assets/11.jpg";
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from "react-router-dom";
 const Industry = () => {
   const { pathname } = useLocation();
-
+const navigate = useNavigate();
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
+    window.scrollTo(0, 0);
   }, [pathname]);
   const cardData = [
     {
@@ -87,48 +86,54 @@ const Industry = () => {
         "Restaurant deliveries are guaranteed on time. Routes are optimized for speed, and meals reach customers fresh. Timely service enhances customer satisfaction.",
     },
   ];
-  
-  return (
-    <div className='content'>
 
-<div className='heading'>
-            <p>WHO WE SERVED</p>
-            <h1>INDUSTRIES</h1>
-            <div className='hr'/>
-        </div>
-        <div className='about-p'>
-        <p>Broadium delivers customer support services across various industries. We focus on meeting the unique needs of each sector. Our services ensure your customers stay happy and your operations run smoothly. We support transportation businesses 24/7. Taxis, roadside assistance, and car delivery companies trust us to manage customer queries and issues. </p>
-        <p>We handle customer support for leading providers. Your customers will get the best service around the clock. We assist travelers with bookings and inquiries. We also work with hospitality businesses. Hotels and restaurants trust us to manage reservations and customer support.</p>
-        </div>
-    <div className="industry-card">
-      {cardData.map((item, index) => (
-        <div className="flip-card" key={index}>
-          <div className="flip-card-inner">
-            {/* Front Side */}
-            <div className="flip-card-front">
-              <img src={item.img} alt={item.title} className="card-image" />
-              <div className="card-overlay">
-                <p className="card-subtitle">{item.subtitle}</p>
-                <h3 className="card-title">{item.title}</h3>
-                <hr className="card-line" />
+  return (
+    <div className="content">
+      <div className="heading">
+        <p>WHO WE SERVED</p>
+        <h1>INDUSTRIES</h1>
+        <div className="hr" />
+      </div>
+      <div className="about-p">
+        <p>
+          Broadium delivers customer support services across various industries.
+          We focus on meeting the unique needs of each sector. Our services
+          ensure your customers stay happy and your operations run smoothly. We
+          support transportation businesses 24/7. Taxis, roadside assistance,
+          and car delivery companies trust us to manage customer queries and
+          issues.{" "}
+        </p>
+        <p>
+          We handle customer support for leading providers. Your customers will
+          get the best service around the clock. We assist travelers with
+          bookings and inquiries. We also work with hospitality businesses.
+          Hotels and restaurants trust us to manage reservations and customer
+          support.
+        </p>
+      </div>
+      <div className="industry-card">
+        {cardData.map((item, index) => (
+          <div className="flip-card" key={index}>
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <img src={item.img} alt={item.title} className="card-image" />
+                <div className="card-overlay">
+                  <p className="card-subtitle">{item.subtitle}</p>
+                  <h3 className="card-title">{item.title}</h3>
+                  <hr className="card-line" />
+                </div>
+              </div>
+              <div className="flip-card-back">
+                <h2 className="card-title">{item.title}</h2>
+                <p className="card-description">{item.description}</p>
+                <button className="btn" onClick={()=>navigate(`/contact`)}>Contact us</button>
               </div>
             </div>
-            {/* Back Side */}
-            <div className="flip-card-back">
-              <p className="card-subtitle">WHO WE SERVED</p>
-              <h2 className="card-title">{item.title}</h2>
-              <p className="card-description">{item.description}</p>
-              <button className="btn" >LEARN MORE</button>
-            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
+  );
+};
 
-
-
-    </div>
-  )
-}
-
-export default Industry
+export default Industry;

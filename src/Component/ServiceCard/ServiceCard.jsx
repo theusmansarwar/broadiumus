@@ -63,7 +63,7 @@ const ServiceCard = () => {
             <div className="card-line" />
             <p className="card-description">{item.description}</p>
             <button className="btn" onClick={() => setSelectedCard(item)}>
-              LEARN MORE
+              Learn More
             </button>
           </div>
         ))}

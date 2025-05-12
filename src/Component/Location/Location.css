@@ -2,44 +2,41 @@
     background-color: var(--background-color);
     color: white;
     display: flex;
-    flex-direction: column;
     width: 100%;
+    justify-content: space-between;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: var(--left-space2);
     padding-right: var(--left-space2);
+    padding-top: var(--default-space);
+    padding-bottom: var(--default-space);
   }
-  .location-container .location-content {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-top: 30px;
-  }
-  .location-container .location-content .address-container {
+ 
+  .location-container .location-section  {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    width: 50%;
-    height: 400px;
+    width: 45%;
+    
   }
-  .location-container .location-content .address-container .address {
+  .location-container .location-section  .address {
     border-left: 1px solid white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 20px;
-    height: 50%;
+  
   }
-  .location-container .location-content .address-container .address h3 {
+  .location-container .location-section  .address h3 {
     margin-bottom: 10px;
   }
-  .location-container .location-content .address-container .address p {
+  .location-container .location-section  .address p {
     line-height: 1.5;
     font-size: var(--default-p-size);
   }
-  .location-container .location-content .map-container {
-    width: 50%;
-    height: 400px;
+  .location-container .location-section .map-container {
+    width: 90%;
+    height: 300px;
     border-radius: 6px;
     overflow: hidden;
   }
@@ -145,24 +142,21 @@
    font-size: var(--default-p-size);
    }
   @media (max-width: 900px) {
-    .location-container .location-content {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .location-container .location-content .address-container {
+   
+    .location-container .location-section  {
       width: 100%;
-      height: fit-location-content;
+     height: fit-content;
       gap: 10px;
     }
-    .location-container .location-content .map-container {
-      width: 100%;
-      height: 300px;
+    .location-container .location-section .map-container {
+    
+      height: 200px;
       border-radius: 0px;
     }
     .location-container {
-       
+       flex-direction: column;
         padding-left: var(--left-space);
         padding-right: var(--left-space);
       }
+      
   }

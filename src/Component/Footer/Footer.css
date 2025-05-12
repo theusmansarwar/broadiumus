@@ -28,7 +28,7 @@
   }
   
   .footer-description {
-    font-size: var(--default-p-size);
+    font-size: var(--default-p-size2);
 
   }
   
@@ -51,7 +51,7 @@
   .footer-section ul li {
     margin-bottom: 8px;
     cursor: pointer;
-    font-size: var(--default-p-size);
+    font-size: var(--default-p-size2);
     width: fit-content;
     line-height: 1;
     margin-left: 20px;
@@ -65,20 +65,27 @@
   
   .footer-section .contact-info p {
     margin: 6px 0;
-    font-size: var(--default-p-size);
+    font-size: var(--default-p-size2);
     display: flex;
     align-items: center;
     cursor: pointer;
+    color: white;
   }
-  .footer-section .contact-info p:hover {
+  .footer-section .contact-info p:hover,
+  .footer-section .contact-info p:hover a {
     color: var(--headings-color);
   }
   .footer-section .contact-info p svg {
-   color: white;
-   font-size: var(--default-p-size);
+
    margin-right: 5px;
   
   }
+  .footer-section .contact-info p a {
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+   
+   }
   
   .footer-bottom {
     
@@ -90,8 +97,8 @@
 
   }
   .footer-bottom p{
-    font-size: var(--default-p-size);
-    width:50%;
+    font-size: var(--default-p-size2);
+    
     padding: 10px;
     text-align: center;
   }
@@ -109,6 +116,6 @@
        .footer-section:last-child {
          width: 100%;
         }
-
+      
 
   }

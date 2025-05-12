@@ -54,6 +54,7 @@ const WhiteClient = ({ cards = [],title,description }) => {
           </div>
         ))}
       </div>
+      {cards.length > cardsPerView && (
       <div className="pagination">
         <div className="dots-wrapper">
           {Array.from({ length: totalDots }).map((_, index) => (
@@ -69,6 +70,7 @@ const WhiteClient = ({ cards = [],title,description }) => {
           <FaArrowRight className="arrow" onClick={nextCard} />
         </div>
       </div>
+      )}
     </div>
   );
 };

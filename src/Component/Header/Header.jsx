@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate, useLocation, NavLink } from "react-router-dom"; // Import useLocation
+import { useNavigate, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
@@ -18,6 +18,7 @@ const Header = () => {
   const navigate = useNavigate();
   const location = useLocation();
   const [activeItem, setActiveItem] = useState("");
+  const [expanded, setExpanded] = useState(false);
 
   useEffect(() => {
     const currentPath = location.pathname;
@@ -34,11 +35,12 @@ const Header = () => {
   const handleMenuClick = (item) => {
     setActiveItem(item.name);
     navigate(item.path);
+    setExpanded(false); // Close menu on mobile after click
   };
 
   return (
     <div className="header">
-      <Navbar expand="lg">
+      <Navbar expand="lg" expanded={expanded} onToggle={setExpanded}>
         <Container fluid className="nav-container">
           <Navbar.Brand href="/">
             <img className="header-logo" src={logo} alt="zemalt.com" />

@@ -177,10 +177,10 @@ const Client = () => {
         </p>
         <p>You will receive full guidance with clear answers. We stay honest and are always ready. We handle every query with care. You will feel valued from the first reply. It is time to connect and solve your needs today.</p>
         </div>
-        <WhiteClient cards={transportationData} title="Transportation & Road Assistance" description="We help transport businesses stay active every hour. Broadium offers fast response and reliable call handling so drivers and dispatchers never lose time."/>
-        <RedClient cards={telecomData} title="Telecom Support" description="Broadium began with telecom and still leads in it. We manage high volumes and solve issues fast, so customers never feel stuck."/>
-        <WhiteClient cards={hospitalityData} title="Hospitality" description="We provide tailored customer support to enhance the hospitality experience. Our services ensure smooth operations and help guests with reservations, inquiries, and special requests around the clock." />
-        <RedClient cards={medicalDentalData} title="Medical & Dental" description="We help healthcare providers manage claims, billing, and patient inquiries. Our team ensures quick processing and accurate results."/>
+        <RedClient cards={transportationData} title="Transportation & Road Assistance" description="We help transport businesses stay active every hour. Broadium offers fast response and reliable call handling so drivers and dispatchers never lose time."/>
+        <WhiteClient cards={telecomData} title="Telecom Support" description="Broadium began with telecom and still leads in it. We manage high volumes and solve issues fast, so customers never feel stuck."/>
+        <RedClient cards={hospitalityData} title="Hospitality" description="We provide tailored customer support to enhance the hospitality experience. Our services ensure smooth operations and help guests with reservations, inquiries, and special requests around the clock." />
+        <WhiteClient cards={medicalDentalData} title="Medical & Dental" description="We help healthcare providers manage claims, billing, and patient inquiries. Our team ensures quick processing and accurate results."/>
     </div>
   )
 }
