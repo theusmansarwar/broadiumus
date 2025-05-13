@@ -86,7 +86,7 @@ const Footer = () => {
 
       <div className="footer-bottom">
      
-        <p>Broadium 2025. All right reserved</p>
+        <p>Copyright © 2021-2025 Broadium LLC . All right reserved</p>
        
       </div>
     </div>

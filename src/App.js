@@ -3,6 +3,7 @@ import {
   Routes,
   Route,
   useNavigate,
+  useLocation, // <-- import this
 } from "react-router-dom";
 import "./App.css";
 import Header from "./Component/Header/Header";
@@ -22,14 +23,22 @@ import { MdOutlinePhoneCallback } from "react-icons/md";
 
 function App() {
   const navigate = useNavigate();
+  const location = useLocation(); // <-- get current route
+
+  // List of routes where Hero should not be shown
+  const hideHeroOnRoutes = ["/privacy-policy", "/terms", "/disclaimer"];
+
   return (
     <div className="App">
       <Header />
       <div className="floating-btn" onClick={() => navigate("/contact")}>
         <MdOutlinePhoneCallback />
-        <p>Request a Callback</p>{" "}
+        <p>Request a Callback</p>
       </div>
-      <Herosection />
+
+      {/* Conditionally render Hero */}
+      {!hideHeroOnRoutes.includes(location.pathname) && <Herosection />}
+
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/contact" element={<Contact />} />

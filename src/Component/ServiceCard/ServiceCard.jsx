@@ -28,7 +28,7 @@ const ServiceCard = () => {
         "Email is a good communication tool, and Broadium excels in providing swift, high-quality responses. Our team prioritizes each message for faster response times. We ensure clear reporting and resolve issues without delays. Customers appreciate our precision and efficiency. You can trust us to maintain high service standards.",
     },
     {
-      title: "Omni-CHANNEL SUPPORT",
+      title: "OMNI-CHANNEL SUPPORT",
       subtitle: "CHECK OUT",
       description:
         "Broadium centralizes customer communication across phone, chat, email, and social media. All interactions stay organized in one system, which helps your team provide consistent and responsive service every time",
