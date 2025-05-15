@@ -69,7 +69,7 @@ const ContactForm = () => {
           email: "",
           phone: "",
           business: "",
-          service: [],
+          services: [],
           message: "",
         });
       }
@@ -165,6 +165,7 @@ const ContactForm = () => {
 
         <div className="checkbox-container">
           <p className="service-label required-label">Services Interested In</p>
+           {errors.services && <p className="error-msg">{errors.services}</p>}
           <div className="checkbox-grid">
             {serviceOptions.map((service) => (
               <div className="checkbox-item" key={service}>

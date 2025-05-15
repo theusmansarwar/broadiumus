@@ -13,24 +13,22 @@
   --text-color: white;
   --font-family-base: var(--font-montserrat);
   --default-p-size: 16px;
-  --default-p-size2: 12px;
+  --default-p-size2: 14px;
   --default-heading-description: 28px;
   --default-border-radius: 6px;
   --gradient-one: linear-gradient(to bottom right, #e7e7e725, #000000);
   --default-space: 60px;
+  
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
-body {
-  font-family: "Montserrat", sans-serif;
-}
-textarea {
-  font-family: "Montserrat", sans-serif;
-}
+
+
 
 .floating-btn {
   background-color: var(--background-color);
@@ -40,7 +38,7 @@ textarea {
   align-items: center;
   justify-content: center;
   color: white;
-  width: 180px;
+  width: 200px;
   border-radius: var(--default-border-radius);
   padding: 12px 7px;
   border-top-right-radius: 0px;
@@ -56,7 +54,7 @@ textarea {
 .floating-btn svg {
   animation: blink 1s infinite;
 }
-.floating-btn p{
+.floating-btn p {
   line-height: 1;
   padding: 0%;
   margin: 0%;
@@ -202,6 +200,9 @@ ul {
     justify-content: space-between;
     margin-top: 30px;
     width: 100%;
+  }
+  .outline-btn2 {
+    margin-top: 30px;
   }
   .floating-btn p {
     display: none;

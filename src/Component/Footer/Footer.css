@@ -1,121 +1,139 @@
 .footer {
-   color: rgb(255, 255, 255);
-   background-color: rgb(0, 0, 0);
-   padding-top: var(--default-space);
-   padding-right: var(--left-space);
-   padding-left: var(--right-space);
-   width: 100%;
-  }
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  padding-top: var(--default-space);
+  padding-right: var(--left-space);
+  padding-left: var(--right-space);
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+  width: 25%;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  font-size: var(--default-p-size2);
+  width: 60%;
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.footer-section ul {
+  list-style: disc;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 8px;
+  cursor: pointer;
+  font-size: var(--default-p-size2);
+  width: fit-content;
+  line-height: 1;
+  margin-left: 20px;
+}
+.footer-section ul li:hover {
+  text-decoration: underline;
+}
+.footer-section .contact-info{
+  width: 90%; 
+}
+
+.footer-section .contact-info p {
+  margin: 6px 0;
+  font-size: var(--default-p-size2);
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: white;
+}
+.footer-section .contact-info p:hover,
+.footer-section .contact-info p:hover a {
+  color: var(--headings-color);
+}
+.footer-section .contact-info p svg {
+ 
+  font-size: 16px;
+}
+.footer-section .contact-info p a {
+  color: white;
+  text-decoration: none;
+}
+.footer-section .contact-info p.location-icon {
+  align-items: flex-start; 
+}
+
+.footer-section .contact-info p.location-icon svg {
   
+  font-size: 30px;
+}
+
+
+.footer-bottom {
+  color: white;
+  border-top: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding: 10px 20px;
+  text-align: center;
+  gap: 40px; 
+}
+
+.footer-bottom p {
+  font-size: var(--default-p-size2);
+  margin: 0;
+}
+.footer-bottom p a{
+  color: var(--background-color);
+  text-decoration: none;
+}
+
+.footer-bottom .pipe {
+  width: 2px;
+  background-color: white;
+  height: 25px;
+}
+
+
+@media (max-width: 900px) {
   .footer-container {
-    display: flex;
-    justify-content: space-between;
-  
-    
+    flex-direction: column;
   }
-  
   .footer-section {
-   width:25%;
-   align-items: center;
+    margin-top: 20px;
+    width: 100%;
   }
-
- 
-   
-  .logo {
-   height: 30px;
-    font-weight: bold;
-    margin-bottom: 15px;
-  }
-  
-  .footer-description {
-    font-size: var(--default-p-size2);
-
-  }
-  
-
-  
-
-  
-  .footer-section h4 {
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: white;
-    font-weight: 700;
-  }
-  
-  .footer-section ul {
-    list-style: disc;
-    padding: 0;
-  }
-  
-  .footer-section ul li {
-    margin-bottom: 8px;
-    cursor: pointer;
-    font-size: var(--default-p-size2);
-    width: fit-content;
-    line-height: 1;
-    margin-left: 20px;
-  }
-  .footer-section ul li:hover {
-   text-decoration: underline;
+  .footer-section:last-child {
+    width: 100%;
   }
  
-  
-
-  
-  .footer-section .contact-info p {
-    margin: 6px 0;
-    font-size: var(--default-p-size2);
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    color: white;
-  }
-  .footer-section .contact-info p:hover,
-  .footer-section .contact-info p:hover a {
-    color: var(--headings-color);
-  }
-  .footer-section .contact-info p svg {
-
-   margin-right: 5px;
+ .footer-bottom {
+    flex-direction: column;
+    gap: 10px;
   
   }
-  .footer-section .contact-info p a {
-    color: white;
-    margin-right: 5px;
-    text-decoration: none;
-   
-   }
-  
-  .footer-bottom {
-    
-    color: white;
- border-top: 1px solid white;
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-
+  .footer-bottom .pipe {
+    display: none;
   }
-  .footer-bottom p{
-    font-size: var(--default-p-size2);
-    
-    padding: 10px;
-    text-align: center;
-  }
- 
-  
 
-  @media (max-width: 900px) {
-    .footer-container {
-      flex-direction: column;
-      }
-    .footer-section {
-        margin-top: 20px;
-        width: 100%;
-       }
-       .footer-section:last-child {
-         width: 100%;
-        }
-      
-
-  }
+}

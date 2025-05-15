@@ -14,7 +14,7 @@ function Location() {
     <div className="location-section">
       <div className="address">
         <h2>Address 01</h2>
-        <p>Floor # 02, Plaza 119, Allama Iqbal RoadLarex Colony, Garhi Shahu,Lahore, 54000.</p>
+        <p>Floor # 02, Plaza 119, Allama Iqbal Road Larex Colony, Garhi Shahu, Lahore.</p>
       </div>
       <div className="map-container">
         <iframe
@@ -31,9 +31,9 @@ function Location() {
     </div>
   
     <div className="location-section">
-      <div className="address">
+      <div className="address address2">
         <h2>Address 02</h2>
-        <p>4419 Centennial Blvd Ste 1060Colorado Springs, CO 80907United States</p>
+        <p>4419 Centennial Blvd Ste 1060 Colorado Springs, CO 80907, United States</p>
       </div>
       <div className="map-container">
         <iframe

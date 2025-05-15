@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
 import './Zerosection.css';
 import bg from '../../assets/bg.svg';
-import zerologo from '../../assets/zero-logo.svg';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import carnival from '../../assets/carnival.png'
 import clearcreek from '../../assets/clearcreak.png'
 import cleveland from '../../assets/cleaved.png'
-
+import cox from '../../assets/cox.png'
+import dish from '../../assets/dish.png'
+import frontier from '../../assets/frontier.png'
+import ATT from '../../assets/att.png'
 import home2suits from '../../assets/home2.png'
+import hughesnet from '../../assets/hughes.png'
 import hungryhouse from '../../assets/hungry.png'
 import lynx from '../../assets/lynx.png'
 import ohara from '../../assets/ohara.svg'
@@ -17,28 +20,34 @@ import shipacar from '../../assets/shipacar.png'
 import spectrum from '../../assets/spectrum.png'
 import statefarm from '../../assets/statefarm.png'
 import sutterhealth from '../../assets/shutter.png'
+import viasat from '../../assets/viasat.png'
 import xfinity from '../../assets/xfinity.png'
 import greenbee from '../../assets/greenbee.png'
 import { useNavigate } from 'react-router-dom';
 const Zerosection = () => {
   const navigate = useNavigate();
   const cards = [
-    { id: 1, logo: lynx, title: "Lynx Taxis (UK)" },
-    { id: 2, logo: ohara, title: "O’Hara Cab (US)" },
-    { id: 3, logo: shipacar, title: "Ship a Car Direct (US)" },
-    { id: 4, logo: statefarm, title: "State Farm (US)" },
-    { id: 5, logo: zerologo, title: "AT&T" },
-    { id: 6, logo: spectrum, title: "Spectrum" },
-    { id: 7, logo: xfinity, title: "Xfinity, Verizon, Cox" },
-    { id: 8, logo: optimum, title: "Optimum, HughesNet, Viasat, Dish, Frontier" },
-    { id: 9, logo: carnival, title: "Carnival Cruise Line (US)" },
-    { id: 10, logo: greenbee, title: "Green Bee Parking (US)" },
-    { id: 11, logo: hungryhouse, title: "Hungry House (UK)" },
-    { id: 12, logo: home2suits, title: "Home2Suites (US)" },
-    { id: 13, logo: riu, title: "RIU Hotels (US)" },
-    { id: 14, logo: cleveland, title: "Cleveland Clinic (Orthopedic, US)" },
-    { id: 15, logo: clearcreek, title: "Clear Creek Dental Clinic (US)" },
-    { id: 16, logo: sutterhealth, title: "SUTTER HEALTH (US)" },
+    { id: 1,  logo: cleveland, title: "Cleveland Clinic (Orthopedic, US)"},
+    { id: 2,  logo: clearcreek, title: "Clear Creek Dental Clinic (US)" },
+    { id: 3,  logo: sutterhealth, title: "SUTTER HEALTH (US)"},
+    { id: 4, logo: hungryhouse, title: "Hungry House (UK)", },
+    { id: 5, logo: home2suits, title: "Home2Suites (US)" },
+    { id: 6, logo: riu, title: "RIU Hotels (US)" },
+    { id: 7, logo: ATT,   title: "AT&T" },
+    { id: 8, logo: spectrum, title: "Spectrum" },
+    { id: 9, logo: xfinity, title: "Xfinity" },
+    { id: 10, logo: cox, title: "Cox" },
+    { id: 11, logo: optimum, title: "Optimum"},
+    { id: 12, logo: hughesnet, title: "HughesNet"},
+    { id: 13, logo: viasat, title: "Viasat" },
+    { id: 14, logo: dish, title: "Dish" },
+    { id: 15, logo: frontier, title: "Frontier" },
+    { id: 16, logo: lynx,  title: "Lynx Taxis (UK)" },
+    { id: 17, logo: ohara,  title: "O’Hara Cab (US)" },
+    { id: 18,  logo: shipacar,  title: "Ship a Car Direct (US)", },
+    { id: 19, logo: statefarm,  title: "State Farm (US)", },
+    { id: 20, logo: carnival,  title: "Carnival Cruise Line (US)" },
+    { id: 21, logo: greenbee,  title: "Green Bee Parking (US)" },
   ];
   
 

@@ -11,7 +11,7 @@ const Disclaimer = () => {
   return (
     <div className="content">
       <div className="heading">
-        <p>LEGAL</p>
+        {/* <p>LEGAL</p> */}
         <h1>DISCLAIMER</h1>
         <div className="hr" />
       </div>

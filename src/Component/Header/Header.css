@@ -3,8 +3,6 @@
   margin: 0 !important;
   width: var(--mid-space) !important;
   margin-left: var(--left-space) !important;
-  
-  
 }
 
 .header-logo {
@@ -12,16 +10,13 @@
 }
 .header {
   width: 100%;
- height: fit-content;
- background-color: white;
+  height: fit-content;
+  background-color: white;
   position: fixed;
   z-index: 100;
- 
 }
 
-
 .menu-item {
-
   margin: 5px;
   min-width: 80px;
   text-align: center;
@@ -32,50 +27,41 @@
 
 .menu-item:hover {
   color: var(--background-color);
-
-  
 }
 
 .menu-item.active {
   color: var(--background-color);
-  
+
   border-bottom: 3px solid var(--background-color);
 }
 
-
-
 .menu-item:last-child {
-
   background-color: var(--background-color);
   border-radius: 50px;
-  border-style: none;
+  border: 1px solid transparent; 
   color: white;
   padding: 5px 15px;
-
+  transition: all 0.3s ease;
 }
+
 .menu-item:last-child:hover {
-
   background-color: transparent;
-  border-style: none;
+  border: 1px solid var(--background-color); 
   color: var(--background-color);
-  border: 1px solid var(--background-color);
-  padding: 4px 14px;
 }
+
+
 .navbar-toggler {
   outline: none !important;
   border: none !important;
 }
 
 @media (max-width: 756px) {
-
-  .header-logo{
+  .header-logo {
     height: 30px;
-
   }
- 
 
   .menu-item:last-child {
-    
-   width: 100%;
+    width: 100%;
   }
 }

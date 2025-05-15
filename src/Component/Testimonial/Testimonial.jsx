@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import "./Testimonial.css";
-import zerologo from "../../assets/testimonials.png";
+import Image1 from "../../assets/testimonial1.png";
+import Image2 from "../../assets/carlos.jpg";
+import Image3 from "../../assets/james.jpg";
+import Image4 from "../../assets/alicia.jpg";
 import { FaArrowLeft, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 
 const Testimonial = () => {
@@ -8,7 +11,7 @@ const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      image: zerologo,
+      image: Image3,
       name: "James Randle",
       role: "Dispatch Manager",
       message:
@@ -17,8 +20,8 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      image: zerologo,
-      name: "Priya Sharma",
+      image: Image1,
+      name: "Elena Cruz",
       role: "Telecom Consultant",
       message:
         "We were losing leads until we partnered with Broadium. Now every call is answered on time. Their agents are smart and trained well. We scaled fast without missing business opportunities again.",
@@ -26,7 +29,7 @@ const Testimonial = () => {
     },
     {
       id: 3,
-      image: zerologo,
+      image: Image2,
       name: "Carlos Martinez",
       role: "Operations Lead",
       message:
@@ -35,12 +38,12 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      image: zerologo,
+      image: Image4,
       name: "Alicia Kim",
       role: "Service Coordinator",
       message:
         "Broadium gave our business the extra support we needed. They treat our customers like their own. Their performance reports are always on point. It feels like they are part of our team.",
-      stars: 5,
+      stars: 4,
     },
   ];
   

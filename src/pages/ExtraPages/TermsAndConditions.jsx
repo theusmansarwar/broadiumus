@@ -10,7 +10,7 @@ const TermsAndConditions = () => {
   return (
     <div className='content'>
   <div className='heading'>
-            <p>WHO WE ARE</p>
+            {/* <p>WHO WE ARE</p> */}
             <h1>Terms And Conditions </h1>
             <div className='hr'/>
         </div>
