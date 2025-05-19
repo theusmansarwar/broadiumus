@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./Contact.css";
 import { toast, ToastContainer } from "react-toastify";
 import { createLead } from "../../DAL/Create";
+import { PhoneInput } from "react-international-phone";
+import "react-international-phone/style.css";
 
 const serviceOptions = [
   "CALL SUPPORT",
@@ -33,6 +35,9 @@ const ContactForm = () => {
   const handleChange = (e) => {
     const { id, value } = e.target;
     setFormData((prev) => ({ ...prev, [id]: value }));
+  };
+   const handlePhoneChange = (value) => {
+    setFormData((prev) => ({ ...prev, phone: value }));
   };
 
   const handleServiceChange = (e) => {
@@ -76,7 +81,7 @@ const ContactForm = () => {
           fieldErrors[field.name] = field.message;
         });
         setErrors(fieldErrors);
-      } 
+      }
     } catch (err) {
       if (err?.status == 400) {
         const fieldErrors = {};
@@ -84,7 +89,7 @@ const ContactForm = () => {
           fieldErrors[field.name] = field.message;
         });
         setErrors(fieldErrors);
-        toast.error()
+        toast.error();
       } else {
         setStatus("error");
       }
@@ -95,7 +100,7 @@ const ContactForm = () => {
     <div className="contact-container">
       <ToastContainer
         position="top-right"
-        autoClose={3000}
+        autoClose={1500}
         pauseOnHover={false}
       />
       <div className="contact-form">
@@ -144,11 +149,12 @@ const ContactForm = () => {
               Contact Number
             </label>
             {errors.phone && <p className="error-msg">{errors.phone}</p>}
-            <input
+            <PhoneInput
               id="phone"
               type="number"
               value={formData.phone}
-              onChange={handleChange}
+              onChange={handlePhoneChange}
+              countryCodeEditable={false}
             />
           </div>
         </div>

@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Herosection.css";
-import HomeHero from "../../assets/homehero.webp";
-import HomeHeroMobile from "../../assets/homehero-mobile.webp";
-import ServiceHero from "../../assets/servicehero.jpeg";
-import ClientHero from "../../assets/clienthero.webp";
-import IndustryHero from "../../assets/industryhero.webp";
-import AboutHero from "../../assets/abouthero.jpeg";
-import ContactHero from "../../assets/contacthero.jpeg";
+
 import { useLocation } from "react-router-dom";
 
 const Herosection = () => {
@@ -20,42 +14,43 @@ const Herosection = () => {
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
-  const contentMap = {
-    "/": {
-      image: isMobile ? HomeHeroMobile : HomeHero,
-      h1: "CUSTOMER SUPPORT",
-      h2: "Because Your Brand Deserves Better",
-    },
-    "/services": {
-      image: ServiceHero,
-      h1: "OUR SERVICES",
-      h2: "Tailored Solutions for Every Business",
-    },
-    "/our-client": {
-      image: ClientHero,
-      h1: "OUR CLIENTS",
-      h2: "Strong Partnerships, Proven Results",
-    },
-    "/industries": {
-      image: IndustryHero,
-      h1: "OUR INDUSTRIES",
-      h2: "Solutions That Scale With You",
-    },
-    "/about-us": {
-      image: AboutHero,
-      h1: "ABOUT US",
-      h2: "Driven by Passion, Guided by Purpose",
-    },
-    "/contact": {
-      image: ContactHero,
-      h1: "CONTACT US",
-      h2: "We’re Just One Message Away",
-    },
-  };
+ const contentMap = {
+  "/": {
+    image: isMobile ? "/homehero-mobile.webp" : "/homehero.webp",
+    h1: "CUSTOMER SUPPORT",
+    h2: "Because Your Brand Deserves Better",
+  },
+  "/services": {
+    image: "/servicehero.jpeg",
+    h1: "OUR SERVICES",
+    h2: "Tailored Solutions for Every Business",
+  },
+  "/our-client": {
+    image: "/clienthero.webp",
+    h1: "OUR CLIENTS",
+    h2: "Strong Partnerships, Proven Results",
+  },
+  "/industries": {
+    image: "/industryhero.webp",
+    h1: "OUR INDUSTRIES",
+    h2: "Solutions That Scale With You",
+  },
+  "/about-us": {
+    image: "/abouthero.jpeg",
+    h1: "ABOUT US",
+    h2: "Driven by Passion, Guided by Purpose",
+  },
+  "/contact": {
+    image: "/contacthero.jpeg",
+    h1: "CONTACT US",
+    h2: "We’re Just One Message Away",
+  },
+};
+
 
   const currentPath = location.pathname;
   const content = contentMap[currentPath] || {
-    image: HomeHero,
+    image: "/homehero.webp",
     h1: "Broadium",
     h2: "Because Your Brand Deserves Better",
   };

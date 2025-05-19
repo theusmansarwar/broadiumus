@@ -137,6 +137,42 @@ textarea::placeholder {
   background-color: white;
   color: var(--background-color);
 }
+
+.react-international-phone-input-container {
+  border-radius: 0px !important;
+  border-bottom: 1px solid gray !important;
+ 
+}
+
+.react-international-phone-country-selector-button {
+  margin-top: 0px !important;
+  height: 50px !important;
+  background-color: transparent !important;
+  border: 0 solid var(--background-color) !important;
+  
+}
+.react-international-phone-input {
+  height: 50px !important;
+  font-size: var(--default-p-size) !important;
+  margin: 0% !important;
+  background-color: transparent !important;
+  border: 0 solid var(--background-color) !important;
+ 
+  color: black !important;
+}
+.react-international-phone-country-selector-dropdown{
+    background-color: white !important;
+    color: black !important;
+}
+.react-international-phone-country-selector-dropdown li:hover{
+    background-color: var(--background-color) !important;
+       color: white !important;
+}
+
+.react-international-phone-country-selector-dropdown__list-item--focused {
+     background-color: var(--background-color) !important;
+    color: white !important;
+}
 /* ///////////////////////// */
 @media (max-width: 768px) {
   .contact-container {

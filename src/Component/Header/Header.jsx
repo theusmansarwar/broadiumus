@@ -3,7 +3,7 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import logo from "../../assets/footer-logo.svg";
+import logo from "../../assets/broadium.webp";
 
 const Header = () => {
   const menuItems = [

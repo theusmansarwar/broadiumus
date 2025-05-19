@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import "./Testimonial.css";
-import Image1 from "../../assets/testimonial1.png";
-import Image2 from "../../assets/carlos.jpg";
+import Image1 from "../../assets/clara.webp";
+import Image2 from "../../assets/carlos.webp";
 import Image3 from "../../assets/james.jpg";
-import Image4 from "../../assets/alicia.jpg";
+import Image4 from "../../assets/lily.webp";
 import { FaArrowLeft, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 
 const Testimonial = () => {
-  
   const testimonials = [
     {
       id: 1,
@@ -39,14 +38,13 @@ const Testimonial = () => {
     {
       id: 4,
       image: Image4,
-      name: "Alex Greenwood",
+      name: "Lily Greenwood",
       role: "Service Coordinator",
       message:
         "Broadium gave our business the extra support we needed. They treat our customers like their own. Their performance reports are always on point. It feels like they are part of our team.",
       stars: 4,
     },
   ];
-  
 
   const [currentPage, setCurrentPage] = useState(0);
   const testimonial = testimonials[currentPage];
@@ -61,29 +59,31 @@ const Testimonial = () => {
   };
 
   return (
-    <div className="testimonial-main-div" >
-      <div className='heading'>
-            <p>CHECK OUT</p>
-            <h1>TESTIMONIALS</h1>
-            <div className='hr'/>
-        </div>
-        <div className='about-p'>
-        <p>Our clients rely on us to deliver top-notch support. They trust our services to boost their business operations.We focus on providing excellent service, and our clients’ feedback reflects that.</p>
-       </div>
+    <div className="testimonial-main-div">
+      <div className="heading">
+        <p>CHECK OUT</p>
+        <h1>TESTIMONIALS</h1>
+        <div className="hr" />
+      </div>
+      <div className="about-p">
+        <p>
+          Our clients rely on us to deliver top-notch support. They trust our
+          services to boost their business operations.We focus on providing
+          excellent service, and our clients’ feedback reflects that.
+        </p>
+      </div>
 
       <div className="testimonials-section">
         <div className="testimonials-area">
           <div className="left">
             <div className="overlay-div">
-            <FaQuoteRight className="quote-icon" />
-              <h2 className="quote-name">{testimonial.name}</h2></div>
+              <FaQuoteRight className="quote-icon" />
+              <h2 className="quote-name">{testimonial.name}</h2>
+            </div>
             <div className="sub-left">
               <div className="testimonial-left-content">
-             
-                
-              
                 <p className="quote-title">WHAT THEY SAY ABOUT US?</p>
-                
+
                 <p className="quote-role">{testimonial.role}</p>
               </div>
             </div>
@@ -91,36 +91,43 @@ const Testimonial = () => {
               <img
                 src={testimonial.image}
                 alt={testimonial.name}
+                loading="lazy"
                 className="testimonial-img"
               />
             </div>
           </div>
           <div className="right">
             <div className="testimonial-right-content">
-            <FaQuoteRight className="quote-icon" />
+              <FaQuoteRight className="quote-icon" />
               <p>{testimonial.message}</p>
               {renderStars(testimonial.stars)}
             </div>
           </div>
         </div>
         <div className="pagination">
-        <div className="dots-wrapper">
-          {testimonials.map((_, index) => (
-            <span
-              key={index}
-              className={`dot-dark ${index === currentPage ? "active" : ""}`}
-              onClick={() => setCurrentPage(index)}
+          <div className="dots-wrapper">
+            {testimonials.map((_, index) => (
+              <span
+                key={index}
+                className={`dot-dark ${index === currentPage ? "active" : ""}`}
+                onClick={() => setCurrentPage(index)}
+              />
+            ))}
+          </div>
+          <div className="arrowss-dark">
+            <FaArrowLeft
+              className="arrow"
+              onClick={() => setCurrentPage((p) => Math.max(p - 1, 0))}
             />
-          ))}
-        </div>
-        <div className="arrowss-dark">
-          <FaArrowLeft className="arrow" onClick={() => setCurrentPage((p) => Math.max(p - 1, 0))} />
-          <FaArrowRight className="arrow" onClick={() => setCurrentPage((p) => Math.min(p + 1, testimonials.length - 1))} />
+            <FaArrowRight
+              className="arrow"
+              onClick={() =>
+                setCurrentPage((p) => Math.min(p + 1, testimonials.length - 1))
+              }
+            />
+          </div>
         </div>
       </div>
-      </div>
-
-      
     </div>
   );
 };
