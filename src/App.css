@@ -18,14 +18,13 @@
   --default-border-radius: 6px;
   --gradient-one: linear-gradient(to bottom right, #e7e7e725, #000000);
   --default-space: 60px;
-  
 }
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 
@@ -72,7 +71,7 @@ ul {
   list-style: none;
 }
 .content {
-  padding-top: var(--default-space);
+  margin-top: 10px;
 }
 .heading {
   display: flex;

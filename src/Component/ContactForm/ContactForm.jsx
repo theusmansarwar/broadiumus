@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Contact.css";
 import { toast, ToastContainer } from "react-toastify";
-import axios from "axios";
+import { createLead } from "../../DAL/Create";
 
 const serviceOptions = [
   "CALL SUPPORT",
@@ -51,17 +51,14 @@ const ContactForm = () => {
       phone: formData.phone,
       email: formData.email,
       business: formData.business,
-      subject: formData.service.join(", "),
+      service: formData.service.join(", "),
       query: formData.message,
     };
     try {
-      const res = await axios.post(
-        "https://zemalt.com/api/CreateLeads",
-        payload
-      );
+      const res = await createLead(payload);
       if (res.status === 201) {
         setStatus("success");
-        toast.success(res?.data?.message);
+        toast.success(res?.message || "Form submitted successfully");
         setErrors({});
         setFormData({
           firstname: "",
@@ -69,17 +66,25 @@ const ContactForm = () => {
           email: "",
           phone: "",
           business: "",
-          services: [],
+          service: [],
           message: "",
         });
       }
-    } catch (err) {
-      if (err.response?.status === 400) {
+      if (res?.status == 400) {
         const fieldErrors = {};
-        err.response.data.missingFields.forEach((field) => {
+        res.missingFields.forEach((field) => {
           fieldErrors[field.name] = field.message;
         });
         setErrors(fieldErrors);
+      } 
+    } catch (err) {
+      if (err?.status == 400) {
+        const fieldErrors = {};
+        err.missingFields.forEach((field) => {
+          fieldErrors[field.name] = field.message;
+        });
+        setErrors(fieldErrors);
+        toast.error()
       } else {
         setStatus("error");
       }
@@ -165,7 +170,7 @@ const ContactForm = () => {
 
         <div className="checkbox-container">
           <p className="service-label required-label">Services Interested In</p>
-           {errors.services && <p className="error-msg">{errors.services}</p>}
+          {errors.service && <p className="error-msg">{errors.service}</p>}
           <div className="checkbox-grid">
             {serviceOptions.map((service) => (
               <div className="checkbox-item" key={service}>

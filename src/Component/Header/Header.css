@@ -3,6 +3,7 @@
   margin: 0 !important;
   width: var(--mid-space) !important;
   margin-left: var(--left-space) !important;
+
 }
 
 .header-logo {
@@ -12,7 +13,8 @@
   width: 100%;
   height: fit-content;
   background-color: white;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 100;
 }
 

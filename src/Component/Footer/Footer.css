@@ -82,7 +82,7 @@
 
 .footer-section .contact-info p.location-icon svg {
   
-  font-size: 30px;
+  font-size: 28px;
 }
 
 
@@ -135,5 +135,9 @@
   .footer-bottom .pipe {
     display: none;
   }
+  .footer-section .contact-info p.location-icon svg {
+  
+  font-size: 18px;
+}
 
 }

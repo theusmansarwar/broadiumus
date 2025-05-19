@@ -1,8 +1,9 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Footer.css";
-import { CiMail } from "react-icons/ci";
-import { IoCallOutline, IoLocationOutline } from "react-icons/io5";
+import { LuMail } from "react-icons/lu";
+import { IoCallOutline} from "react-icons/io5";
+import { SlLocationPin } from "react-icons/sl";
 import footerlogo from "../../assets/Brodium-White.png";
 const Footer = () => {
   const navigate = useNavigate();
@@ -28,7 +29,7 @@ const Footer = () => {
       <div className="footer-container">
         {/* Logo & About */}
         <div className="footer-section">
-          <img src={footerlogo} className="logo" alt="Logo" />
+          <img src={footerlogo} className="logo" alt="broadium.us" />
           <p className="footer-description">
             Boost customer trust with Broadium, where every call and message
             gets a fast and accurate response every time.
@@ -61,7 +62,7 @@ const Footer = () => {
 
           <div className="contact-info">
             <p>
-              <CiMail />
+              <LuMail />
               <a href="mailto:support@broadium.us">support@broadium.us</a>
             </p>
             <p>
@@ -69,7 +70,7 @@ const Footer = () => {
               <a href="tel:+12103468115">+1 (210) 346-8115</a>
             </p>
             <p className="location-icon">
-              <IoLocationOutline />
+              <SlLocationPin  /> 
               <a
                 href="https://www.google.com/maps/place/4419+Centennial+Blvd+Ste+1060,+Colorado+Springs,+CO+80907"
                 target="_blank"

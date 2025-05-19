@@ -1,6 +1,10 @@
 .hero-section {
-  height: 100vh;
+  height: 600px;
   color: white;
+  width: var(--mid-space);
+  margin-left: var(--left-space);
+  border-radius: 6px;
+  overflow: hidden;
 }
 .dark-effect {
   width: 100%;
@@ -42,7 +46,7 @@
 }
 @media (max-width: 900px) {
   .hero-section {
-    height: 500px;
+    height: 400px;
     color: white;
   }
   .dark-effect h1 {

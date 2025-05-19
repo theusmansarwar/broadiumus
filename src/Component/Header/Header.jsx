@@ -43,7 +43,7 @@ const Header = () => {
       <Navbar expand="lg" expanded={expanded} onToggle={setExpanded}>
         <Container fluid className="nav-container">
           <Navbar.Brand href="/">
-            <img className="header-logo" src={logo} alt="zemalt.com" />
+            <img className="header-logo" src={logo} alt="broadium.us" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">

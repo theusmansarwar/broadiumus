@@ -20,23 +20,35 @@ import PrivacyPolicy from "./pages/ExtraPages/PrivacyPolicy";
 import TermsAndConditions from "./pages/ExtraPages/TermsAndConditions";
 import Disclaimer from "./pages/ExtraPages/Disclaimer";
 import { MdOutlinePhoneCallback } from "react-icons/md";
+import { useEffect } from "react";
+import { countView } from "./DAL/Create";
 
 function App() {
-  const navigate = useNavigate();
-  const location = useLocation(); // <-- get current route
+  return (
+    <div className="App">
+      <AppContent />
+    </div>
+  );
+}
 
-  // List of routes where Hero should not be shown
+function AppContent() {
+  const navigate = useNavigate();
+  const location = useLocation();
+
+  useEffect(() => {
+    countView(); 
+  }, []);
+
   const hideHeroOnRoutes = ["/privacy-policy", "/terms", "/disclaimer"];
 
   return (
-    <div className="App">
+    <>
       <Header />
       <div className="floating-btn" onClick={() => navigate("/contact")}>
         <MdOutlinePhoneCallback />
         <p>Request a Callback</p>
       </div>
 
-      {/* Conditionally render Hero */}
       {!hideHeroOnRoutes.includes(location.pathname) && <Herosection />}
 
       <Routes>
@@ -52,8 +64,9 @@ function App() {
       </Routes>
 
       <Footer />
-    </div>
+    </>
   );
 }
+
 
 export default App;
