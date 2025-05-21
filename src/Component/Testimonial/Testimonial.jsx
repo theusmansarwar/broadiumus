@@ -1,16 +1,12 @@
 import React, { useState } from "react";
 import "./Testimonial.css";
-import Image1 from "../../assets/clara.webp";
-import Image2 from "../../assets/carlos.webp";
-import Image3 from "../../assets/james.jpg";
-import Image4 from "../../assets/lily.webp";
 import { FaArrowLeft, FaArrowRight, FaQuoteRight } from "react-icons/fa";
 
 const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      image: Image3,
+      image: "/james.jpg",
       name: "James Randle",
       role: "Dispatch Manager",
       message:
@@ -19,7 +15,7 @@ const Testimonial = () => {
     },
     {
       id: 2,
-      image: Image1,
+      image: "/clara.webp",
       name: "Clara Christensen",
       role: "Telecom Consultant",
       message:
@@ -28,7 +24,7 @@ const Testimonial = () => {
     },
     {
       id: 3,
-      image: Image2,
+      image: "/carlos.webp",
       name: "Carlos Rodriguez",
       role: "Operations Lead",
       message:
@@ -37,7 +33,7 @@ const Testimonial = () => {
     },
     {
       id: 4,
-      image: Image4,
+      image: "/lily.webp",
       name: "Lily Greenwood",
       role: "Service Coordinator",
       message:

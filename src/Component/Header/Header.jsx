@@ -3,7 +3,6 @@ import { useNavigate, useLocation } from "react-router-dom";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.css";
-import logo from "../../assets/broadium.webp";
 
 const Header = () => {
   const menuItems = [
@@ -43,7 +42,7 @@ const Header = () => {
       <Navbar expand="lg" expanded={expanded} onToggle={setExpanded}>
         <Container fluid className="nav-container">
           <Navbar.Brand href="/">
-            <img className="header-logo" src={logo} alt="broadium.us" />
+            <img className="header-logo" src="/logo.svg" alt="broadium.us" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar-nav" />
           <Navbar.Collapse id="navbar-nav">
