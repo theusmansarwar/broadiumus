@@ -14,7 +14,7 @@ import Image11 from "../../assets/11.jpg";
 import { useLocation, useNavigate } from "react-router-dom";
 const Industry = () => {
   const { pathname } = useLocation();
-const navigate = useNavigate();
+  const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [pathname]);
@@ -23,67 +23,67 @@ const navigate = useNavigate();
       img: Image1,
       title: "Cab (Taxi) Services",
       description:
-        "Efficient rides are delivered through seamless GPS tracking. GPS tracks the nearest driver, and optimized routes ensure timely arrivals. Passengers always reach their destination without delays.",
+        "You get help booking rides and confirming appointments. Our agents support you during your trip. They make sure dispatchers can manage rides well and stay focused.",
     },
     {
       img: Image2,
       title: "Road Assistance",
       description:
-        "Immediate help arrives when needed. GPS tracks real-time locations, and routes are optimized to reduce delays. Drivers get the assistance they require quickly.",
+        "You receive fast help if your car breaks down. Our 24/7 call team connects you with service providers. This reduces your wait time and keeps communication clear.",
     },
     {
       img: Image3,
       title: "Parking Lot Reservations",
       description:
-        "Finding parking is made easy through real-time GPS tracking. Available spots are shown on the map. Optimized routes lead drivers to the nearest parking.",
+        "You can ask about parking and get your reservation confirmed. Our agents follow up to keep things smooth. Businesses rely on us to improve customer satisfaction day and night.",
     },
     {
       img: Image4,
       title: "Dispatching",
       description:
-        "Dispatching services are optimized for efficiency. GPS tracks vehicles in real time with the fastest route to the destination. All services reach their destinations promptly.",
+        "Our team handles dispatch requests in real time. They confirm deliveries and guide vehicles to the right place. You can trust clear and professional communication every time.",
     },
     {
       img: Image5,
       title: "Telecom",
       description:
-        "Telecom services benefit from real-time GPS tracking. Field technicians' locations are monitored to ensure quicker responses. Routes are optimized for efficiency, and customers experience faster service.",
+        "You get answers to billing questions and new service requests. Agents solve technical issues fast. Telecom companies count on our 24/7 team for accurate support.",
     },
     {
       img: Image6,
       title: "Medical Billing",
       description:
-        "Medical billing becomes smoother with GPS tracking. Routes are optimized to reduce travel time, allowing documents to reach clinics quickly. The entire billing process runs fast.",
+        "Our experts confirm insurance details and post payments. They make AR calls to reduce delays. You will find steady communication throughout the process.",
     },
     {
       img: Image7,
       title: "Dental Billing",
       description:
-        "Dental billing services are streamlined with GPS tracking. Agents' locations are monitored, and routes are optimized to save time. Documents reach their destinations promptly.",
+        "Our agents verify insurance and follow up on claims. They resolve billing questions quickly. Dental offices enjoy easier communication and smooth operations.",
     },
     {
       img: Image8,
       title: "Hotel Reservations",
       description:
-        "Hotel guests enjoy a seamless experience with optimized transfers. GPS tracks shuttle vehicles, and real-time route adjustments ensure on-time arrivals.",
+        "You get 24/7 help with booking changes and questions. Agents handle your needs carefully. Hotels improve reservation accuracy support thanks to this service.",
     },
     {
       img: Image9,
       title: "Cruise Reservation",
       description:
-        "Cruise transfers are efficient and timely. GPS tracks vehicles to ensure quick arrivals at the dock. Routes are optimized for speed, allowing guests to board their cruises.",
+        "Our team manages your cruise bookings and answers questions. They provide clear travel details. You get smooth and professional service at every step.",
     },
     {
       img: Image10,
       title: "General Order Processing",
       description:
-        "Order processing is made faster with real-time GPS tracking. Routes are optimized to minimize delays so deliveries reach customers quickly. Each order is processed efficiently.",
+        "You place orders with confidence. Our agents check details and keep in touch. Businesses avoid mistakes and missed messages with our help.",
     },
     {
       img: Image11,
       title: "Restaurant Order Taking",
       description:
-        "Restaurant deliveries are guaranteed on time. Routes are optimized for speed, and meals reach customers fresh. Timely service enhances customer satisfaction.",
+        "You order by phone or chat and confirm special requests. Restaurants improve speed and customer satisfaction with this support",
     },
   ];
 
@@ -126,7 +126,9 @@ const navigate = useNavigate();
               <div className="flip-card-back">
                 <h2 className="card-title">{item.title}</h2>
                 <p className="card-description">{item.description}</p>
-                <button className="btn" onClick={()=>navigate(`/contact`)}>Contact us</button>
+                <button className="btn" onClick={() => navigate(`/contact`)}>
+                  Contact us
+                </button>
               </div>
             </div>
           </div>
