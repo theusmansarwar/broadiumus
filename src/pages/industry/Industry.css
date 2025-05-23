@@ -53,7 +53,7 @@
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    color: white;
+    color:var(--text-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -94,14 +94,14 @@
     font-size: var(--default-p-size2);
     padding: 10px 20px;
     background-color: var(--background-color);
-    color: white;
+    color:var(--text-color);
     border: 1px solid var(--background-color);
     border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s;
   }
   .industry-card .flip-card-back .btn:hover {
-    background-color: white;
+    background-color:var(--text-color);
     color: var(--background-color);
   }
   @media (max-width: 900px) {

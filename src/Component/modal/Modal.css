@@ -20,7 +20,7 @@
   }
   .modal-card .modal-card-top {
     background-color: var(--background-color);
-    color: white;
+    color:var(--text-color);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,7 +34,7 @@
   .modal-card .modal-card-close {
     font-size: 24px;
     cursor: pointer;
-    color: white;
+    color:var(--text-color);
   }
   .modal-card .modal-card-close:hover {
 

@@ -1,6 +1,6 @@
 .location-container {
     background-color: var(--background-color);
-    color: white;
+    color:var(--text-color);
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -54,7 +54,7 @@
     margin: 0%;
     padding: 0%;
     line-height: 1;
-    color: white;
+    color:var(--text-color);
   }
  .heading-area p{
     font-size: var(--default-heading-description);
@@ -62,7 +62,7 @@
   padding: 0%;
   line-height: 1;
   
-  color: white;
+  color:var(--text-color);
   }
 .heading-area .hr{
    background-color: #ffffff;

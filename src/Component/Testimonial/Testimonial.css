@@ -24,7 +24,7 @@
   width: 50%;
   height: 100%;
   background-color: var(--background-color);
-  color: white;
+  color:var(--text-color);
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -64,12 +64,12 @@
 .testimonials-area .left .overlay-div .quote-icon {
   font-size: 180px;
   opacity: 0.1;
-  color: white;
+  color:var(--text-color);
   margin-top: 100px;
 }
 .testimonials-area .left .overlay-div .quote-name {
   font-size: 56px;
-  color: white;
+  color:var(--text-color);
   font-weight: 700;
 }
 .testimonials-area .left .testimonial-left-content .quote-role {
@@ -114,7 +114,7 @@
 
 .testimonial-right-content .quote-icon {
   font-size: 150px;
-  color: white;
+  color:var(--text-color);
   padding: 10px;
   background-color: var(--background-color);
   opacity: 0.05;
@@ -165,7 +165,7 @@
   .testimonials-area .left .overlay-div .quote-icon {
     font-size: 80px;
     opacity: 0.1;
-    color: white;
+    color:var(--text-color);
     margin-top: 20px;
   }
   .testimonials-area .left .overlay-div .quote-name {

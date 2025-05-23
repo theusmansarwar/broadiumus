@@ -126,7 +126,7 @@ textarea::placeholder {
   align-self: center;
   padding: 10px 40px;
   background-color: var(--background-color);
-  color: white;
+  color:var(--text-color);
   border: 1px solid var(--background-color);
   border-radius: 6px;
   cursor: pointer;
@@ -134,7 +134,7 @@ textarea::placeholder {
   transition: background 0.3s;
 }
 .send-btn:hover {
-  background-color: white;
+  background-color:var(--text-color);
   color: var(--background-color);
 }
 

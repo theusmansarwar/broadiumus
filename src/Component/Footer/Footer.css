@@ -31,7 +31,7 @@
 .footer-section h4 {
   margin-bottom: 10px;
   font-size: 1.1rem;
-  color: white;
+  color:var(--text-color);
   font-weight: 700;
 }
 
@@ -62,7 +62,7 @@
   align-items: center;
   gap: 5px;
   cursor: pointer;
-  color: white;
+  color:var(--text-color);
 }
 .footer-section .contact-info p:hover,
 .footer-section .contact-info p:hover a {
@@ -73,7 +73,7 @@
   font-size: 16px;
 }
 .footer-section .contact-info p a {
-  color: white;
+  color:var(--text-color);
   text-decoration: none;
 }
 .footer-section .contact-info p.location-icon {
@@ -87,7 +87,7 @@
 
 
 .footer-bottom {
-  color: white;
+  color:var(--text-color);
   border-top: 1px solid white;
   display: flex;
   align-items: center;
@@ -110,7 +110,7 @@
 
 .footer-bottom .pipe {
   width: 2px;
-  background-color: white;
+  background-color:var(--text-color);
   height: 25px;
 }
 

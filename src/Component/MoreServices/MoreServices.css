@@ -18,8 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--text-color);;
+    color:var(--text-color);
     white-space: nowrap;
   }
   .more-service-card .more-card .card-title {

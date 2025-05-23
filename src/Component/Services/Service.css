@@ -20,7 +20,7 @@
 .service-card{
     width: 32%;
     text-align: center;
-    color: white;
+    color:var(--text-color);
     padding: 2%;
     border-right: 2px solid white;
     
@@ -41,7 +41,7 @@ font-size: var(--default-p-size);
    .service-card{
        width: 100%;
        text-align: center;
-       color: white;
+       color:var(--text-color);
        padding-bottom: var(--default-space); 
        border: none;
        border-bottom: 2px solid white;
