@@ -58,7 +58,7 @@ const Herosection = () => {
         src={content.image}
         alt="Hero Background"
         className="hero-image"
-        loading={currentPath === "/" ? "eager" : "lazy"}
+        // loading={currentPath === "/" ? "eager" : "lazy"}
       />
       <div className="dark-effect">
         <div className="hero-text">
