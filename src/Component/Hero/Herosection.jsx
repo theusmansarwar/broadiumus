@@ -54,7 +54,12 @@ const Herosection = () => {
 
   return (
     <div className="hero-section">
-      <img src={content.image} alt="Hero Background" className="hero-image" />
+      <img
+        src={content.image}
+        alt="Hero Background"
+        className="hero-image"
+        loading={currentPath === "/" ? "eager" : "lazy"}
+      />
       <div className="dark-effect">
         <div className="hero-text">
           {currentPath === "/" && (
