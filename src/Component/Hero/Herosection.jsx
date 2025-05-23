@@ -4,18 +4,18 @@ import { useLocation } from "react-router-dom";
 
 const Herosection = () => {
   const location = useLocation();
-  const [isMobile, setIsMobile] = useState(false);
+  // const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
-    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
+  // useEffect(() => {
+  //   const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+  //   checkMobile();
+  //   window.addEventListener("resize", checkMobile);
+  //   return () => window.removeEventListener("resize", checkMobile);
+  // }, []);
 
   const contentMap = {
     "/": {
-      image: isMobile ? "/homehero-mobile.webp" : "/homehero.webp",
+      image:  "/homehero.webp",
       h1: "CUSTOMER SUPPORT",
       h2: "Because Your Brand Deserves Better",
     },
