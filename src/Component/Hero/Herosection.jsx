@@ -4,12 +4,13 @@ import { useLocation } from "react-router-dom";
 
 const Herosection = () => {
   const location = useLocation();
-  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => setIsMobile(window.innerWidth <= 768);
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const contentMap = {
@@ -53,21 +54,24 @@ const Herosection = () => {
   };
 
   return (
-    <div className="hero-section">
-      <img
-        src={content.image}
-        alt="Hero Background"
-        className="hero-image"
-        loading={currentPath === "/" ? "eager" : "lazy"}
-      />
+    <div
+      className="hero-section"
+      style={{
+        position: "relative",
+        backgroundImage: `url(${content.image})`,
+        backgroundSize: "cover",
+        backgroundPosition: "bottom center",
+        backgroundRepeat: "no-repeat",
+      }}
+    >
       <div className="dark-effect">
         <div className="hero-text">
-          {/* {currentPath === "/" && (
+          {currentPath === "/" && (
             <div className="hero-icons">
               <img src="/mail.png" alt="Mail Icon" />
               <img src="/chat.png" alt="Chat Icon" />
             </div>
-          )} */}
+          )}
           <h1>{content.h1}</h1>
           <h2>{content.h2}</h2>
           <div className="hr" />
