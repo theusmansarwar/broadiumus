@@ -66,12 +66,12 @@ const Herosection = () => {
     >
       <div className="dark-effect">
         <div className="hero-text">
-          {currentPath === "/" && (
+          {/* {currentPath === "/" && (
             <div className="hero-icons">
               <img src="/mail.png" alt="Mail Icon" />
               <img src="/chat.png" alt="Chat Icon" />
             </div>
-          )}
+          )} */}
           <h1>{content.h1}</h1>
           <h2>{content.h2}</h2>
           <div className="hr" />
