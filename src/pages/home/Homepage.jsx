@@ -1,19 +1,34 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './HomePage.css'
 import Service from '../../Component/Services/Service'
 import Zerosection from '../../Component/Zero/Zerosection'
 import Testimonial from '../../Component/Testimonial/Testimonial'
-import { useLocation, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
+import Herosection from "../../Component/Hero/Herosection"
 const Homepage = () => {
   const navigate = useNavigate();
-  const { pathname } = useLocation();
+const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
-  }, [pathname]);
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  const heroImage = isMobile ? "/homehero-mobile.webp" : "/homehero.webp";
+
+ 
+
   return (
-    <div className='content'>
-      
+    <div className="content">
+      <Herosection
+        section="home"
+        title="CUSTOMER SUPPORT"
+        subtitle="Because Your Brand Deserves Better"
+        showIcons={true}
+        customImage={heroImage}
+      />
         <div className='heading'>
             <p>WHO WE ARE</p>
             <h1>ABOUT US</h1>

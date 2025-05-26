@@ -11,13 +11,11 @@ import Image8 from "../../assets/8.jpg";
 import Image9 from "../../assets/9.jpg";
 import Image10 from "../../assets/10.jpg";
 import Image11 from "../../assets/11.jpg";
-import { useLocation, useNavigate } from "react-router-dom";
+import Herosection from "../../Component/Hero/Herosection"
+import {  useNavigate } from "react-router-dom";
 const Industry = () => {
-  const { pathname } = useLocation();
   const navigate = useNavigate();
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [pathname]);
+ 
   const cardData = [
     {
       img: Image1,
@@ -89,6 +87,11 @@ const Industry = () => {
 
   return (
     <div className="content">
+        <Herosection
+      section="industry"
+        title="OUR INDUSTRIES"
+        subtitle="Solutions That Scale With You"
+      />
       <div className="heading">
         <p>WHO WE SERVED</p>
         <h1>INDUSTRIES</h1>

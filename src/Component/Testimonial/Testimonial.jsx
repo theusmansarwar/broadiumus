@@ -6,7 +6,7 @@ const Testimonial = () => {
   const testimonials = [
     {
       id: 1,
-      image: "/james.jpg",
+      image: "/james.avif",
       name: "James Randle",
       role: "Dispatch Manager",
       message:

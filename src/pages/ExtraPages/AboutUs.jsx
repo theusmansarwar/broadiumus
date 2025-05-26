@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./extra.css";
-import { useLocation } from "react-router-dom";
+import Herosection from "../../Component/Hero/Herosection"
 const AboutUs = () => {
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
-  }, [pathname]);
+ 
   return (
     <div className="content">
+      <Herosection
+       section="about"
+        title="ABOUT US"
+        subtitle="Driven by Passion, Guided by Purpose"
+      />
       <div className="heading">
         <p>WHO WE ARE</p>
         <h1>ABOUT US</h1>

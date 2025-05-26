@@ -1,16 +1,17 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ServiceCard from '../../Component/ServiceCard/ServiceCard'
 import MoreServices from '../../Component/MoreServices/MoreServices'
-import { useLocation } from 'react-router-dom';
+import Herosection from "../../Component/Hero/Herosection"
 
 const ServicePage = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
-  }, [pathname]);
+  
   return (
     <div className='content'>
+      <Herosection
+      section="service"
+        title="OUR SERVICES"
+        subtitle="Tailored Solutions for Every Business"
+      />
 <div className='heading'>
             <p>WHO WE SERVED</p>
             <h1>OUR SERVICES</h1>

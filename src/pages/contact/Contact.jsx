@@ -1,15 +1,15 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import ContactForm from '../../Component/ContactForm/ContactForm'
 import Location from '../../Component/Location/Location'
-import { useLocation } from 'react-router-dom';
+import Herosection from "../../Component/Hero/Herosection"
 const Contact = () => {
-  const { pathname } = useLocation();
-
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
-  }, [pathname]);
   return (
     <div className='content'>
+      <Herosection
+        section="contact"
+        title="CONTACT US"
+        subtitle="We’re Just One Message Away"
+      />
          <div className='heading'>
             <p>WE ARE OPEN TO LISTEN</p>
             <h1>CONTACT US</h1>

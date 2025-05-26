@@ -1,15 +1,16 @@
 import {
-  BrowserRouter as Router,
   Routes,
   Route,
   useNavigate,
-  useLocation, // <-- import this
 } from "react-router-dom";
 import "./App.css";
 import Header from "./Component/Header/Header";
 import Footer from "./Component/Footer/Footer";
-import Herosection from "./Component/Hero/Herosection";
+import { MdOutlinePhoneCallback } from "react-icons/md";
+import { useEffect } from "react";
+import { countView } from "./DAL/Create";
 
+// Pages
 import Homepage from "./pages/home/Homepage";
 import Contact from "./pages/contact/Contact";
 import Industry from "./pages/industry/Industry";
@@ -19,9 +20,8 @@ import AboutUs from "./pages/ExtraPages/AboutUs";
 import PrivacyPolicy from "./pages/ExtraPages/PrivacyPolicy";
 import TermsAndConditions from "./pages/ExtraPages/TermsAndConditions";
 import Disclaimer from "./pages/ExtraPages/Disclaimer";
-import { MdOutlinePhoneCallback } from "react-icons/md";
-import { useEffect } from "react";
-import { countView } from "./DAL/Create";
+import ScrollToTop from "./utils/ScrollToTop";
+
 
 function App() {
   return (
@@ -33,23 +33,20 @@ function App() {
 
 function AppContent() {
   const navigate = useNavigate();
-  const location = useLocation();
 
   useEffect(() => {
-    countView(); 
+    countView();
   }, []);
-
-  const hideHeroOnRoutes = ["/privacy-policy", "/terms", "/disclaimer"];
 
   return (
     <>
+    <ScrollToTop />
       <Header />
+
       <div className="floating-btn" onClick={() => navigate("/contact")}>
         <MdOutlinePhoneCallback />
         <p>Request a Callback</p>
       </div>
-
-      {!hideHeroOnRoutes.includes(location.pathname) && <Herosection />}
 
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -67,6 +64,5 @@ function AppContent() {
     </>
   );
 }
-
 
 export default App;

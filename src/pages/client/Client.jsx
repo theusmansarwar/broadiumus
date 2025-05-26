@@ -22,13 +22,9 @@ import sutterhealth from '../../assets/shutter.png'
 import viasat from '../../assets/viasat.png'
 import xfinity from '../../assets/xfinity.png'
 import greenbee from '../../assets/greenbee.png'
-import { useLocation } from 'react-router-dom'
+import Herosection from "../../Component/Hero/Herosection"
 const Client = () => {
-  const { pathname } = useLocation();
 
-  useEffect(() => {
-    window.scrollTo(0, 0); // Scrolls to top on route change
-  }, [pathname]);
   const medicalDentalData = [
     {
       id: 1,
@@ -167,6 +163,11 @@ const Client = () => {
   ];
   return (
     <div className='content'>
+       <Herosection
+       section='client'
+        title="OUR CLIENTS"
+        subtitle="Strong Partnerships, Proven Results"
+      />
         <div className='heading'>
             <p>WHO WE WORKED WITH</p>
             <h1>OUR CLIENTS</h1>
