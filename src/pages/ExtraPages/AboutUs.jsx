@@ -28,7 +28,7 @@ const AboutUs = () => {
 
         <h2>Our Foundation</h2>
         <p>
-          Our company is built on trust, speed, and dependability. We focus on
+          <a href="https://broadium.us/">Our company</a> is built on trust, speed, and dependability. We focus on
           clear communication and proactive service. Our team members are
           trained to represent your brand. They reflect the professionalism and
           care of your company.
@@ -61,7 +61,7 @@ const AboutUs = () => {
 
         <h2>Industries We Serve</h2>
         <p>
-          Broadium services work across many industries. We understand the
+          Broadium services work across many <a href="https://broadium.us/industries">industries</a>. We understand the
           unique needs of every sector. Our team receives specific training to
           meet those needs. We currently serve businesses in:
         </p>
@@ -116,8 +116,8 @@ const AboutUs = () => {
           Security stays at the core of everything we do at Broadium. We follow
           strict data protection rules and meet top standards like GDPR, HIPAA,
           and PCI-DSS. Our team trains in security practices, and our systems
-          are watched 24/7 to prevent breaches. You can trust our backup plans
-          to keep your services running during any issue.
+          are watched 24/7 to prevent breaches. You can trust our <a href="https://broadium.us/privacy-policy">backup plans </a>
+           to keep your services running during any issue.
         </p>
 
         <h2>Client Success</h2>
@@ -154,7 +154,7 @@ const AboutUs = () => {
         <h2>Let’s Build Something Great Together</h2>
         <p>
           Ready to improve your customer experience? Broadium gives you the
-          support and flexibility your business needs. Contact us today. We will
+          support and flexibility your business needs. <a href="https://broadium.us/contact">Contact us today</a>. We will
           listen to your goals and create a plan that delivers real results.
         </p>
       </section>

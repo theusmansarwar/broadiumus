@@ -123,6 +123,7 @@ ul {
   width: fit-content;
   transition: background 0.3s;
   cursor: pointer;
+  margin-top: 10px;
 }
 .outline-btn2:hover {
   background-color: white;

@@ -5,6 +5,11 @@
     font-size: var(--default-p-size);
 
 }
+.about-p a{
+  text-decoration: none;
+  color: var(--background-color);
+  font-weight: bold;
+}
 .about-btn{
     width: var(--mid-space2);
     margin-left: var(--left-space2);

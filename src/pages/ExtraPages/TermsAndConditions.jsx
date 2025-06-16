@@ -25,7 +25,7 @@ const TermsAndConditions = () => {
   
    
     <p>
-      We are committed to protecting your privacy. Your data is used only to improve services and is never sold or misused. Please refer to our Privacy Policy for more details.
+      We are committed to protecting your privacy. Your data is used only to improve services and is never sold or misused. Please refer to our <a href="https://broadium.us/privacy-policy">Privacy Policy</a> for more details.
    
       You are responsible for keeping your account information safe and secure.
     </p>
@@ -65,8 +65,9 @@ const TermsAndConditions = () => {
     </p>
   
     <p>
-      We are here to help and ensure your experience with Broadium is positive. Contact us if you have any questions.
+      We are here to help and ensure your experience with Broadium is positive. If you have any questions or need support, please <a href="https://broadium.us/contact">Contact Us</a> directly.
     </p>
+    <p>Return to <a href="https://broadium.us/">Home</a>.</p>
   </section>
 </div>
 

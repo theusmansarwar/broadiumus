@@ -10,3 +10,8 @@ section ul li{
 section h2{
     font-size: 24px;
 }
+a{
+    color: var(--background-color);
+    text-decoration: none;
+    font-weight: bold;
+}

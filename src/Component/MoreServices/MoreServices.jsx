@@ -30,15 +30,25 @@ const MoreServices = () => {
   ];
   return (
     <div className="more-area">
-    <div className="heading-area">
-          <p>WE CAN DO</p>
+      <div className="heading-area">
+        <p>WE CAN DO</p>
         <h1>A LOT MORE</h1>
-        <div className='hr'/>
-       <p className="description">Broadium offers many services beyond expectations. Our team is ready to tackle new challenges. We customize solutions to meet your unique needs. You can trust us to handle all aspects of your business. Our flexibility keeps us ahead. We ensure that every service we offer aligns with your goals. </p>
-       <p className="description">You will find our support adaptable to your business growth. Our expertise guarantees that we can do much more. We are always prepared to improve your business operations and elevate your customer experience.</p>
-       </div>
+        <div className="hr" />
+        <p className="description">
+          Broadium offers many services beyond expectations. Our team is ready
+          to tackle new challenges. We customize solutions to meet your unique
+          needs. You can trust us to handle all aspects of your business. Our
+          flexibility keeps us ahead. We ensure that every service we offer
+          aligns with your goals.{" "}
+        </p>
+        <p className="description">
+          You will find our support adaptable to your business growth. Our
+          expertise guarantees that we can do much more. We are always prepared
+          to improve your business operations and elevate your{" "}
+          <a href="https://broadium.us/industries">customer experience</a> .
+        </p>
+      </div>
       <div className="more-service-card">
-      
         {cardData.map((item, index) => (
           <div className="more-card" key={index}>
             <h2 className="card-title">{item.title}</h2>

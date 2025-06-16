@@ -65,7 +65,7 @@ const Testimonial = () => {
         <p>
           Our clients rely on us to deliver top-notch support. They trust our
           services to boost their business operations.We focus on providing
-          excellent service, and our clients’ feedback reflects that.
+          excellent service, and our clients’ <a href="https://broadium.us/our-client">feedback</a> reflects that.
         </p>
       </div>
 

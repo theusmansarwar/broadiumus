@@ -32,6 +32,9 @@
     color: black;
     border-left: 3px solid rgb(0, 0, 0);
   }
+  .description a{
+    color: var(--background-color);
+  }
   .vertical-line {
     width: 2px;
     height: 150px;
@@ -41,6 +44,7 @@
     background-color: black;
     width: 80%;
     margin-top: 20px;
+     margin-bottom: 5px;
     height: 2px;
     z-index: 10;
   }

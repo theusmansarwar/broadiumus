@@ -43,6 +43,7 @@ const Disclaimer = () => {
         <p>
           While we strive for 24/7 access, we cannot ensure uninterrupted availability. Downtime may occur due to maintenance or unexpected issues. Broadium is not liable for service disruptions.
         </p>
+        <p>To explore our solutions, please visit <a href="https://broadium.us/services">Our Services</a> Page </p>
       
         <h2>Limitation of Liability</h2>
         <p>
@@ -56,7 +57,7 @@ const Disclaimer = () => {
       
         <h2>Personal Information</h2>
         <p>
-          We value your privacy. Please read our Privacy Policy to understand how your data is collected, used, and protected.
+          We value your privacy. Please read our <a href="https://broadium.us/privacy-policy">Privacy Policy</a> to understand how your data is collected, used, and protected.
         </p>
       
         <h2>Changes to Disclaimer</h2>
@@ -68,6 +69,7 @@ const Disclaimer = () => {
         <p>
           All content on this site—including text, images, logos, and videos—is owned by Broadium or our content providers. It is protected by copyright laws. You may not copy, reproduce, or use any content without written permission.
         </p>
+        <p>Learn More about <a href="https://broadium.us/our-client">Our Clients</a> or how we serve <a href="https://broadium.us/industries">Industries</a> through our solutions.</p>
       
         <h2>Termination of Access</h2>
         <p>
@@ -86,8 +88,9 @@ const Disclaimer = () => {
       
         <h2>Questions or Concerns?</h2>
         <p>
-          Please contact us with any questions about this Disclaimer. We’re here to help and ensure your experience is secure and clear.
+          We’re here to help and ensure your experience is secure and clear.
         </p>
+        <p>Please feel free to <a href="https://broadium.us/contact">Contact Us</a> with any questions. Or learn more <a href="https://broadium.us/about-us">About Us</a> and our mission.</p>
       </section>
     </div>
   );

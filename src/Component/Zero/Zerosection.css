@@ -17,6 +17,7 @@
   background-color:var(--text-color);
   width: 80%;
   margin-top: 20px;
+  margin-bottom: 5px;
   height: 2px;
   z-index: 10;
 }

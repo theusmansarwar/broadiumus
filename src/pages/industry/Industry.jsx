@@ -110,8 +110,8 @@ const Industry = () => {
           We handle customer support for leading providers. Your customers will
           get the best service around the clock. We assist travelers with
           bookings and inquiries. We also work with hospitality businesses.
-          Hotels and restaurants trust us to manage reservations and customer
-          support.
+          Hotels and restaurants trust us to manage reservations and <a href="https://broadium.us/contact">customer
+          support</a>.
         </p>
       </div>
       <div className="industry-card">

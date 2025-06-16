@@ -25,8 +25,8 @@ const RedClient = ({ cards = [],title,description }) => {
     <div className="assistance-container">
       <div className="heading-area4">
         <h1>{title}</h1>
-        <p className="description">
-         {description}
+        <p   dangerouslySetInnerHTML={{ __html: description }} className="description">
+        
         </p>
       </div>
       {/* Descriptions */}

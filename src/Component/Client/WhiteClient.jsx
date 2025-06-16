@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./WhiteClient.css";
 
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-const WhiteClient = ({ cards = [],title,description }) => {
+const WhiteClient = ({ cards = [], title, description }) => {
   const cardsPerView = 3;
   const totalDots = cards.length - cardsPerView + 1;
   const [startIndex, setStartIndex] = useState(0);
@@ -24,9 +24,10 @@ const WhiteClient = ({ cards = [],title,description }) => {
     <div className="assistance-container2">
       <div className="heading-area3">
         <h1>{title}</h1>
-        <p className="description">
-          {description}
-        </p>
+        <p
+          dangerouslySetInnerHTML={{ __html: description }}
+          className="description"
+        ></p>
       </div>
       <div className="mid">
         <ul>
@@ -37,7 +38,8 @@ const WhiteClient = ({ cards = [],title,description }) => {
                 key={card.id}
                 className={isActive ? "active-description" : ""}
               >
-                <span></span><strong> {card.title}</strong> {card.description}
+                <span></span>
+                <strong> {card.title}</strong> {card.description}
               </li>
             );
           })}
@@ -55,21 +57,21 @@ const WhiteClient = ({ cards = [],title,description }) => {
         ))}
       </div>
       {cards.length > cardsPerView && (
-      <div className="pagination">
-        <div className="dots-wrapper">
-          {Array.from({ length: totalDots }).map((_, index) => (
-            <span
-              key={index}
-              className={`dot-dark ${index === startIndex ? "active" : ""}`}
-              onClick={() => goToIndex(index)}
-            />
-          ))}
+        <div className="pagination">
+          <div className="dots-wrapper">
+            {Array.from({ length: totalDots }).map((_, index) => (
+              <span
+                key={index}
+                className={`dot-dark ${index === startIndex ? "active" : ""}`}
+                onClick={() => goToIndex(index)}
+              />
+            ))}
+          </div>
+          <div className="arrowss-dark">
+            <FaArrowLeft className="arrow" onClick={prevCard} />
+            <FaArrowRight className="arrow" onClick={nextCard} />
+          </div>
         </div>
-        <div className="arrowss-dark">
-          <FaArrowLeft className="arrow" onClick={prevCard} />
-          <FaArrowRight className="arrow" onClick={nextCard} />
-        </div>
-      </div>
       )}
     </div>
   );
