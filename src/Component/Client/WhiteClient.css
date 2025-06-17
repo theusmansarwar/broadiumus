@@ -35,6 +35,9 @@
   .description a{
     color: var(--background-color);
   }
+  .description a:hover{
+    text-decoration: underline;
+  }
   .vertical-line {
     width: 2px;
     height: 150px;

@@ -31,6 +31,9 @@
   color: white;
   font-weight: bold;
 }
+.heading-area .description a:hover {
+  text-decoration: underline;
+}
 @media (max-width: 900px) {
   .more-service-card .more-card {
     padding: 5px;

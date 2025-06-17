@@ -43,7 +43,7 @@ const Disclaimer = () => {
         <p>
           While we strive for 24/7 access, we cannot ensure uninterrupted availability. Downtime may occur due to maintenance or unexpected issues. Broadium is not liable for service disruptions.
         </p>
-        <p>To explore our solutions, please visit <a href="https://broadium.us/services">Our Services</a> Page </p>
+        <p>To explore our solutions, please visit <a href="https://broadium.us/services">Our Services</a> Page.</p>
       
         <h2>Limitation of Liability</h2>
         <p>

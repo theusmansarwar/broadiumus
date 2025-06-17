@@ -45,7 +45,7 @@ const MoreServices = () => {
           You will find our support adaptable to your business growth. Our
           expertise guarantees that we can do much more. We are always prepared
           to improve your business operations and elevate your{" "}
-          <a href="https://broadium.us/industries">customer experience</a> .
+          <a href="https://broadium.us/industries">customer experience</a>.
         </p>
       </div>
       <div className="more-service-card">

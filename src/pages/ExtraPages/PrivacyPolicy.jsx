@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
         <p>
           If you have any questions about how we protect your data or need more
           details, feel free to <a href="https://broadium.us/contact">contact us</a>. We’re here to support you every step
-          of the way.Learn more <a href="https://broadium.us/contact">About Us</a> and how we prioritize your success.
+          of the way. Learn more <a href="https://broadium.us/contact">About Us</a> and how we prioritize your success.
         </p>
       </section>
     </div>

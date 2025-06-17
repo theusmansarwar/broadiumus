@@ -10,6 +10,10 @@
   color: var(--background-color);
   font-weight: bold;
 }
+.about-p a:hover{
+  text-decoration: underline;
+  
+}
 .about-btn{
     width: var(--mid-space2);
     margin-left: var(--left-space2);
