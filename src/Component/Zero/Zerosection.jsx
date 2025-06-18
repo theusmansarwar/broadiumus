@@ -108,9 +108,9 @@ const Zerosection = () => {
             ))}
           </div>
           <div className='arrowss'>
-          <FaArrowLeft className='arrow' onClick={prevPage} />
+          <FaArrowLeft className='arrow' onClick={prevPage} style={{ userSelect: "none" }}/>
         
-          <FaArrowRight className='arrow' onClick={nextPage} />
+          <FaArrowRight className='arrow' onClick={nextPage} style={{ userSelect: "none" }}/>
           </div>
         </div>
 

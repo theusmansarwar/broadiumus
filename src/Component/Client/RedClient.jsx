@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./RedClient.css";
-import zerologo from "../../assets/zero-logo.svg";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const RedClient = ({ cards = [],title,description }) => {
  
@@ -70,8 +69,8 @@ const RedClient = ({ cards = [],title,description }) => {
           ))}
         </div>
         <div className="arrowss">
-          <FaArrowLeft className="arrow" onClick={prevCard} />
-          <FaArrowRight className="arrow" onClick={nextCard} />
+          <FaArrowLeft className="arrow" onClick={prevCard} style={{ userSelect: "none" }}/>
+          <FaArrowRight className="arrow" onClick={nextCard} style={{ userSelect: "none" }} />
         </div>
       </div>
       )}

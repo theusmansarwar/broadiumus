@@ -68,8 +68,16 @@ const WhiteClient = ({ cards = [], title, description }) => {
             ))}
           </div>
           <div className="arrowss-dark">
-            <FaArrowLeft className="arrow" onClick={prevCard} />
-            <FaArrowRight className="arrow" onClick={nextCard} />
+            <FaArrowLeft
+              className="arrow"
+              onClick={prevCard}
+              style={{ userSelect: "none" }}
+            />
+            <FaArrowRight
+              className="arrow"
+              onClick={nextCard}
+              style={{ userSelect: "none" }}
+            />
           </div>
         </div>
       )}
