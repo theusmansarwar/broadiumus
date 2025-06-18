@@ -112,10 +112,12 @@ const Testimonial = () => {
           </div>
           <div className="arrowss-dark">
             <FaArrowLeft
+            style={{ userSelect: "none" }}
               className="arrow"
               onClick={() => setCurrentPage((p) => Math.max(p - 1, 0))}
             />
             <FaArrowRight
+            style={{ userSelect: "none" }}
               className="arrow"
               onClick={() =>
                 setCurrentPage((p) => Math.min(p + 1, testimonials.length - 1))
