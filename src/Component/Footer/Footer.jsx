@@ -63,12 +63,9 @@ const Footer = () => {
           <div className="contact-info">
             <p>
               <LuMail />
-              <a href="mailto:support@broadium.us">support@broadium.us</a>
+              <a href="mailto:broadium@zemalt.com">broadium@zemalt.com</a>
             </p>
-            <p>
-              <IoCallOutline />
-              <a href="tel:+12103468115">+1 (210) 346-8115</a>
-            </p>
+            
             <p className="location-icon">
               <SlLocationPin  /> 
               <a
@@ -84,7 +81,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>Designed by <a href="https://zemalt.com/" target="_blank" rel="noopener noreferrer">Zemalt.com</a> - Security managed by <a href="https://plutosec.ca/" target="_blank" rel="noopener noreferrer">Plutosec.ca</a></p>
+        <p>Designed by <a href="https://zemalt.com/" target="_blank" rel="noopener noreferrer">Zemalt.com</a></p>
         <span className="pipe"></span>
         <p>Copyright © 2021-2025 Broadium LLC . All right reserved</p>
       </div>
